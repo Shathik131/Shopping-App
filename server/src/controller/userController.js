@@ -35,7 +35,7 @@ router.post("/signup", validateSignupData, async (req, res) => {
   }
 });
 
-const validateSigninData = (req, res, next) => {
+const validateSignInData = (req, res, next) => {
   const { userName, userPassword } = req.body;
 
   if (!userName || !userPassword) {
@@ -47,7 +47,7 @@ const validateSigninData = (req, res, next) => {
   next();
 };
 
-router.post("/signin", async (req, res) => {
+router.post("/signin",validateSignInData, async (req, res) => {
   const { userName, userPassword } = req.body;
 
   try {
