@@ -7,34 +7,37 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 const navbar = () => {
   return (
     <div>
-      <Navbar collapseOnSelect expand='lg' className='bg-body-tertiary'>
+      <Navbar collapseOnSelect expand='lg' bg='dark' className='bg-body-dark'>
         <Container>
-          <Navbar.Brand href='#home'>React-Bootstrap</Navbar.Brand>
+          <span>
+            <img
+              src='/fruit_image/fruits store.jpg'
+              className=' rounded-5'
+              width={50}
+            />
+          </span>
+
+          <Navbar.Brand href='#home' className="nav_text px-2 fs-4">DRESS-STORE</Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav' />
           <Navbar.Collapse id='responsive-navbar-nav'>
-            <Nav className='me-auto'>
-              <Nav.Link href='#features'>Features</Nav.Link>
-              <Nav.Link href='#pricing'>Pricing</Nav.Link>
-              <NavDropdown title='Dropdown' id='collapsible-nav-dropdown'>
-                <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.2'>
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href='#action/3.3'>
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href='#action/3.4'>
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Nav>
-              <Nav.Link href='#deets'>More deets</Nav.Link>
-              <Nav.Link eventKey={2} href='#memes'>
-                Dank memes
-              </Nav.Link>
-            </Nav>
+          <Nav className=" mx-auto fs-5 ">
+            <Nav.Link href="/" className="nav_text">
+              HOME
+            </Nav.Link>
+            <Nav.Link href="/product" className="nav_text">
+              PRODUCT
+            </Nav.Link>
+            <Nav.Link href="/about" className="nav_text">
+              ABOUT US
+            </Nav.Link>
+            <Nav.Link href="/contact" className="nav_text">
+              CONTACT
+            </Nav.Link>
+          </Nav>
+
+          <Nav>
+          ABOUT US
+          </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
