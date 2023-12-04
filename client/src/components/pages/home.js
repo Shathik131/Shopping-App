@@ -181,6 +181,41 @@ const Home = () => {
           </Col>
         ))}
       </Row>
+
+      <Row>
+        <Col xs={12} sm={12} md={6} lg={6}>
+          <div className=' p-3'>
+            <img
+              src='https://static-bebeautiful-in.unileverservices.com/fruits%20glow%20cover_0.jpg'
+              alt=''
+              className='img-fluid rounded'
+            />
+          </div>
+        </Col>
+        <Col xs={12} sm={12} md={6} lg={6}>
+          <div className='p-3'>
+            <h2 className=''>OUR VALUES : QUALITY AND RESPONSIVENESS</h2>
+            <h4 className='mt-4'>FRUITS STORE,an irreproachable quality</h4>
+            <p>
+              The name of our company refers to the impeccable quality of our
+              products. As experts in fruit knowledge, we guarantee both the
+              freshness of our products and an optimal level of maturity. We
+              also offer an organic range, in order to meet the growing demand
+              of our customers.
+            </p>
+
+            <h4>FRUITS STORE,a privileged commercial follow-up</h4>
+
+            <p>
+              Dedicated to full client service, we have throughout our history
+              developed product ranges and services adapted to their needs. Even
+              today, we respond to any specific request and are organized to
+              guarantee our customers an immediate reactivity. Our only mission:
+              satisfy them
+            </p>
+          </div>
+        </Col>
+      </Row>
     </Container>
   );
 };
