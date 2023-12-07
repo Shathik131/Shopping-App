@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <div className='App'> 
         <Home />           
-      </div> 
+      </div>  
     </>
   );
 }
